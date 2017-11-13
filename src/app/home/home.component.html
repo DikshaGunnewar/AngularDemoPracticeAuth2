@@ -1,0 +1,18 @@
+<div class="bgimg" style="height: 740px">
+  <div style="padding-top: 220px; text-align: center">
+    <h2 style="font-family:Georgia, 'Times New Roman', Times, serif; font: bold; color: white">Log In here...!</h2>
+  </div>
+  <div class="container" style="padding-top: 30px; text-align: center">
+    <form role="form" (submit)="login($event, username.value, password.value)">
+      <input style="width: 400px;margin-left: 380px;" #username id="username" required="required" type="username" class="form-control"
+        id="username" placeholder="Username">
+      <br>
+      <input style="width: 400px;margin-left: 380px;" #password id="password" required="required" type="password" class="form-control"
+        id="password" placeholder="Password">
+      <div class="mass" style="padding: 20px;">
+
+        <button type="submit" class="btn btn-success " style="font-family: Georgia, 'Times New Roman', Times, serif">Login</button>
+        <input type="button" class="btn btn-success" value="Register" [routerLink]="['/register']">
+      </div>
+    </form>
+  </div>
